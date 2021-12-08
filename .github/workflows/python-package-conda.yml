@@ -24,19 +24,12 @@ jobs:
     - name: Install request
       run: | 
         conda install requests
+        
     - name: Update zhihu
       run: |
-        cd zhihu
+        #cd zhihu
         sh run.sh
-    - name:  Commit test
-      run: |
-        git config --global user.email zhangli344236745@163.com
-        git config --global user.name zhangli344236745
-        git add .
-        git commit -m"action:`date`"
-        git pull --rebase
-    - name: Push changes
-      use: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        
+    
+    
 
