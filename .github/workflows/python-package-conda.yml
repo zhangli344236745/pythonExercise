@@ -35,4 +35,8 @@ jobs:
         git add .
         git commit -m"action:`date`"
         git pull --rebase
+    - name: Push changes
+      use: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 
