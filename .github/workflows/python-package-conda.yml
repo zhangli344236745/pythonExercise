@@ -26,8 +26,8 @@ jobs:
         sh run.sh
     - name: Commit
       run: |
-        git config --global user.email guodongxiaren@163.com
-        git config --global user.name guodongxiaren
+        git config --global user.email zhangli344236745@163.com
+        git config --global user.name zhangli344236745
         git add .
         #git commit -m"action:`date +'%Y-%m-%d'`"
         git commit -m"action:`date`"
